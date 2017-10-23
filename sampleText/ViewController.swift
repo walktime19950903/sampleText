@@ -26,6 +26,8 @@ class ViewController: UIViewController {
         //TextViewを常に中央寄せ
         myTextView.center = self.view.center
         
+        //コミット
+        
         //文字の量に合わせて変化していくように設定
         myTextView.sizeToFit()
         
