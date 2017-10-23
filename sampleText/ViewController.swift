@@ -17,15 +17,19 @@ class ViewController: UIViewController {
         //文字色を変更(プロパティ指定)
         myTextView.textColor = UIColor.blue
         
-        myTextView.textAlignment = NSTextAlignment.center
+        
         
         myTextView.font = UIFont(name: "AmericanTypewriter", size:13.0);
+        
+        myTextView.textAlignment = NSTextAlignment.center
         
         //TextViewを常に中央寄せ
         myTextView.center = self.view.center
         
         //文字の量に合わせて変化していくように設定
-        myTextView.sizeFit = 
+        myTextView.sizeToFit()
+        
+        print(myTextView.text)
         
         //TODO:プロパティ指定を使用してプログラムで以下の変更を行ってください
         //フォントをAmericanTypewriterに変更
